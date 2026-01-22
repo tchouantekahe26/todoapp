@@ -11,16 +11,16 @@ $(document).ready(function() {
 		var long = textarea.val().length;
 		var onlyText = textarea.val().replace(/\s/g,'');
 		if (long == 0 || onlyText == 0) {
-			// btn.removeAttr('disabled');
+			btn.removeAttr('disabled');
 		}
 		else {
-			// btn.prop("disabled", true);
+			btn.prop("disabled", true);
 		}
 	}
 	btn.click(function() {
 		addTask();
 		textarea.val('');
-		//  btn.prop("disabled", true);
+		 btn.prop("disabled", true);
 	});
 	function addTask() {
 		var taskContent = textarea.val();
